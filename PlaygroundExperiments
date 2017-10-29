@@ -1,0 +1,17 @@
+
+## Working on a Structure that holds an characterStat Dictionary and possibly could determine class depending on the comparison of each keys in the character stat
+
+struct Person {
+    var name: String
+    var characterStat: [String : Int] = ["Strength":10, "Intelligence":10, "Vitality":10, "Dexterity":10, "Luck":10]
+    func sayHello() {
+        print("Hello, there! My name is \(name)!")
+    }
+    func declareStrength() {
+        print(characterStat)
+    }
+}
+
+let person = Person(name: "Francis", characterStat: [:])
+person.sayHello()
+person.declareStrength()
